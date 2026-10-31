@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abdul's Website</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0b1020;
+    color: white;
+}
+
+header {
+    background: #151d35;
+    padding: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #00e5ff;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.hero {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    background: linear-gradient(135deg, #101b3f, #512b81);
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #00e5ff;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 600px;
+}
+
+.btn {
+    margin-top: 25px;
+    padding: 14px 30px;
+    background: #00e5ff;
+    color: #101020;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+section h2 {
+    color: #00e5ff;
+    margin-bottom: 25px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background: #192541;
+    padding: 30px;
+    border-radius: 15px;
+    width: 250px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    background: #26385f;
+}
+
+.card h3 {
+    color: #00e5ff;
+    margin-bottom: 15px;
+}
+
+footer {
+    background: #151d35;
+    padding: 25px;
+    text-align: center;
+    color: #aaa;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">ABDUL.</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+    </nav>
+</header>
+
+<div class="hero" id="home">
+    <h1>Hello, I'm <span>Abdul Hakkeem</span></h1>
+    <p>
+        Welcome to my personal website!
+        I am a student interested in Technology,
+        Software Development and Artificial Intelligence.
+    </p>
+    <button class="btn" onclick="showMessage()">
+        Explore More
+    </button>
+</div>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am an engineering student.
+        I love learning new things,
+        exploring technology and improving my skills.
+    </p>
+</section>
+
+<section id="skills">
+    <h2>My Interests</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Programming</h3>
+            <p>Learning C programming and coding.</p>
+        </div>
+
+        <div class="card">
+            <h3>Artificial Intelligence</h3>
+            <p>Exploring the world of AI technology.</p>
+        </div>
+
+        <div class="card">
+            <h3>Web Development</h3>
+            <p>Creating beautiful websites using HTML and CSS.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Abdul Hakkeem | My First Website</p>
+</footer>
+
+<script>
+function showMessage() {
+    alert("Welcome to Abdul's Website!");
+}
+</script>
+
+</body>
+</html>
